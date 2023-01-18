@@ -1,34 +1,39 @@
-{
-"env": {
-  "browser": true,
-  "es2021": true
+module.exports = {
+env: {
+  browser: true,
+  es2021: true
   },
-  "settings": {
-    "react": {
-    "version": "detect"
+  settings: {
+    react: {
+    version: "detect"
     }
   },
-  "extends": [
+  extends: [
     "eslint:recommended",
     "plugin:react/recommended",
     "plugin:prettier/recommended",
     "plugin:@typescript-eslint/eslint-recommended",
     "plugin:@typescript-eslint/recommended"
   ],
-  "parser": "@typescript-eslint/parser",
-  "parserOptions": {
-    "ecmaFeatures": {
-      "jsx": true
+  parser: "@typescript-eslint/parser",
+  parserOptions: {
+    ecmaFeatures: {
+      jsx: true
     },
-    "ecmaVersion": 12,
-    "sourceType": "module"
+    ecmaVersion: "latest",
+    sourceType: "module"
   },
-  "plugins": [
+  plugins: [
     "react",
     "react-hooks",
     "@typescript-eslint"
   ],
-  "rules": {
+  rules: {
+    'prettier/prettier': ["error", {
+      'singleQuote': true,
+      'trailingComma': 'none',
+      'semi': false,
+    }],
     "react-hooks/rules-of-hooks": "error",
     "react-hooks/exhaustive-deps": "warn",
     "react/prop-types": "off",
