@@ -2,12 +2,12 @@
   "name": "eslint-for-react-ts",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "react.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
-  "author": "",
+  "author": "rone-silveira",
   "license": "ISC",
   "devDependencies": {
     "@typescript-eslint/eslint-plugin": "^5.48.2",
